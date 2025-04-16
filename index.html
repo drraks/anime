@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Merch Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="anime-logo">Anime<span class="accent">Merch</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="/catalog" class="nav-link">
+                            <span>Каталог</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/novinki" class="nav-link">
+                            <span>Новинки</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/rasprodazha" class="nav-link">
+                            <span>Распродажа</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <form>
+                        <input type="text" class="search-input" placeholder="Поиск...">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <a href="/cart" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <h1 class="anime-logo">Anime<span class="accent">Merch</span></h1>
+                </div>
+                <button class="close-menu-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-links">
+                <ul>
+                    <li><a href="/catalog">Каталог</a></li>
+                    <li><a href="/novinki">Новинки</a></li>
+                    <li><a href="/rasprodazha">Распродажа</a></li>
+                </ul>
+                <div class="mobile-search">
+                    <form>
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <a href="/cart" class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Корзина</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome-content">
+                    <div class="welcome-image">
+                        <img src="images/luffy.jpg" alt="Манки Д. Луффи">
+                    </div>
+                    <div class="welcome-info">
+                        <h2>Нам уже 5 лет!</h2>
+                        <p>С 2019 года мы радуем фанатов аниме качественным мерчем. Присоединяйтесь к нашему сообществу!</p>
+                        <a href="#products" class="welcome-btn">Выбрать товар</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Аниме Мерч</h2>
+                    <p class="section-description">Эксклюзивные товары для настоящих фанатов аниме</p>
+                </div>
+                
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="clothes">Одежда</button>
+                    <button class="filter-btn" data-filter="mugs">Кружки</button>
+                    <button class="filter-btn" data-filter="pants">Штаны</button>
+                    <button class="filter-btn" data-filter="shoes">Обувь</button>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Одежда -->
+                    <div class="product-card" data-category="clothes" data-price="1999">
+                        <div class="product-image">
+                            <img src="images/naruto.jpg" alt="Кофта Наруто">
+                        </div>
+                        <div class="product-info">
+                            <h3>Кофта "Наруто"</h3>
+                            <p class="product-description">Теплая кофта с принтом Наруто и Курамой. Мягкий материал, удобный крой.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">Наруто</span>
+                                <span class="product-tag">Зима</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">1999 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кружки -->
+                    <div class="product-card" data-category="mugs" data-price="999">
+                        <div class="product-image">
+                            <img src="images/onepiece.jpg" alt="Кружка One Piece">
+                        </div>
+                        <div class="product-info">
+                            <h3>Кружка "One Piece"</h3>
+                            <p class="product-description">Керамическая кружка с изображением символа Луффи. При нагревании проявляется скрытый дизайн.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">One Piece</span>
+                                <span class="product-tag">Термохромная</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">999 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Штаны -->
+                    <div class="product-card" data-category="pants" data-price="2999">
+                        <div class="product-image">
+                            <img src="images/demon.jpg" alt="Штаны Demon Slayer">
+                        </div>
+                        <div class="product-info">
+                            <h3>Штаны "Demon Slayer"</h3>
+                            <p class="product-description">Спортивные штаны с дизайном в стиле Хашира. Удобные и стильные.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">Demon Slayer</span>
+                                <span class="product-tag">Спорт</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">2999 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новые карточки -->
+                    <div class="product-card" data-category="clothes" data-price="2499">
+                        <div class="product-image">
+                            <img src="images/titan.jpg" alt="Футболка Attack on Titan">
+                        </div>
+                        <div class="product-info">
+                            <h3>Футболка "Attack on Titan"</h3>
+                            <p class="product-description">Классическая футболка с символикой Разведкорпуса. 100% хлопок.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">Attack on Titan</span>
+                                <span class="product-tag">Лето</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">2499 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mugs" data-price="1299">
+                        <div class="product-image">
+                            <img src="images/death.jpg" alt="Кружка Death Note">
+                        </div>
+                        <div class="product-info">
+                            <h3>Кружка "Death Note"</h3>
+                            <p class="product-description">Керамическая кружка с изображением тетради смерти. Черный матовый дизайн.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">Death Note</span>
+                                <span class="product-tag">Классика</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">1299 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="shoes" data-price="3999">
+                        <div class="product-image">
+                            <img src="images/hero.jpg" alt="Кроссовки My Hero Academia">
+                        </div>
+                        <div class="product-info">
+                            <h3>Кроссовки "My Hero Academia"</h3>
+                            <p class="product-description">Спортивные кроссовки с дизайном в стиле UA. Удобные и стильные.</p>
+                            <div class="product-tags">
+                                <span class="product-tag">My Hero Academia</span>
+                                <span class="product-tag">Спорт</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="price">3999 ₽</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-header">
+                        <h2>О нас</h2>
+                        <p class="about-subtitle">Ваш проводник в мир аниме-мерча</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="images/zoro.jpg" alt="Наш магазин">
+                            <div class="image-overlay">
+                                <span>С 2020 года</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-info">
+                            <div class="about-text">
+                                <p>Мы - команда преданных фанатов аниме, которые превратили свою страсть в дело жизни. Наш магазин - это не просто место для покупок, это пространство, где встречаются единомышленники.</p>
+                                <div class="anime-quote">
+                                    <blockquote>
+                                        "Ты можешь умереть в любой момент, но жить нужно так, чтобы не жалеть о прожитых днях!"
+                                        <cite>- Roronoa Zoro, One Piece</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+                            <div class="about-features">
+                                <div class="feature">
+                                    <i class="fas fa-gem"></i>
+                                    <h3>Качество</h3>
+                                    <p>Только оригинальная продукция от проверенных производителей</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-heart"></i>
+                                    <h3>Страсть</h3>
+                                    <p>Мы разделяем вашу любовь к аниме и понимаем, что важно для фанатов</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <h3>Скорость</h3>
+                                    <p>Быстрая доставка по всей России и удобные способы оплаты</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-header">
+                        <h2>Как нас найти</h2>
+                        <p class="contact-subtitle">Добро пожаловать в наш магазин аниме-мерча</p>
+                    </div>
+                    
+                    <div class="contact-content">
+                        <div class="contact-info-overlay">
+                            <div class="contact-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="info-text">
+                                        <h3>Наш магазин</h3>
+                                        <p>г. Москва, ул. Анимешная, д. 1</p>
+                                        <p class="info-note">Метро: Аниме-Станция (5 минут пешком)</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div class="info-text">
+                                        <h3>Часы работы</h3>
+                                        <p>Пн-Пт: 10:00 - 20:00</p>
+                                        <p>Сб-Вс: 11:00 - 19:00</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div class="info-text">
+                                        <h3>Свяжитесь с нами</h3>
+                                        <p>+7 (999) 123-45-67</p>
+                                        <p class="info-note">Консультация по товарам и заказам</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3714191035365!2d37.61729931593066!3d55.75582628055278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgC3Rgi4sIDEsINCc0L7RgdC60LLQsCwgMTA3031!5e0!3m2!1sru!2sru!4v1645000000000!5m2!1sru!2sru" 
+                                width="100%" 
+                                height="600" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h2 class="anime-logo">Anime<span class="accent">Merch</span></h2>
+                        <p>Ваш проводник в мир аниме-мерча</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="ВКонтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Телеграм">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Инстаграм">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Каталог</h3>
+                            <ul>
+                                <li><a href="/catalog">Одежда</a></li>
+                                <li><a href="/catalog">Кружки</a></li>
+                                <li><a href="/catalog">Обувь</a></li>
+                                <li><a href="/catalog">Новинки</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Информация</h3>
+                            <ul>
+                                <li><a href="/about">О нас</a></li>
+                                <li><a href="/delivery">Доставка</a></li>
+                                <li><a href="/payment">Оплата</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Помощь</h3>
+                            <ul>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/returns">Возврат</a></li>
+                                <li><a href="/size-guide">Размеры</a></li>
+                                <li><a href="/support">Поддержка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h3>Подпишитесь на новости</h3>
+                        <p>Получайте первыми информацию о новинках и акциях</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2024 Anime Merch Paradise. Все права защищены.</p>
+                        <div class="legal-links">
+                            <a href="/privacy">Политика конфиденциальности</a>
+                            <a href="/terms">Условия использования</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
